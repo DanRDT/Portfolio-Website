@@ -1,0 +1,73 @@
+/*Fonts*/
+@font-face {
+  font-family: 'PlusJakartaSans-ExtraBold';
+  src: url('/fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('/fonts/Raleway-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('/fonts/RobotoFlex-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'PlusJakartaSans-ExtraBold', 'Roboto Flex', sans-serif, Arial;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scrollbar-color: grey transparent;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  /* color: var(--primary-color); */
+  /* font-weight: normal; */
+  /* transition: transform 0.5s, opacity 0.1s; */
+  /* -webkit-tap-highlight-color: transparent; */
+}
+
+html {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+::-webkit-scrollbar:horizontal {
+  height: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border: 0rem solid grey;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
