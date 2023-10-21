@@ -9,13 +9,15 @@ export default {
     extend: {
       colors: {
         red: {
-          750: '#AA1C1C',
+          rubine: '#D41D6C',
         },
-        bluish: {
-          light: '#3A7EF9',
-          DEFAULT: '#0B5EF3',
-          dark: '#0049CB',
+        'rubine-red': '#D41D6C',
+        blue: {
+          slate: '#D1DEFF',
+          cornflower: '#8FB3FF',
         },
+        slate: '#D1DEFF',
+        'cornflower-blue': '#8FB3FF',
         background: {
           light: '#EFF2F3',
           dark: '#181818',
