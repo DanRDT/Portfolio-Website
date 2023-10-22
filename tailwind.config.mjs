@@ -8,16 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        red: {
+        pink: {
           rubine: '#D41D6C',
         },
-        'rubine-red': '#D41D6C',
         blue: {
           slate: '#D1DEFF',
           cornflower: '#8FB3FF',
         },
-        slate: '#D1DEFF',
-        'cornflower-blue': '#8FB3FF',
         background: {
           light: '#EFF2F3',
           dark: '#181818',
@@ -25,12 +22,16 @@ export default {
         placeholder: '#d9d9d9',
       },
       dropShadow: {
-        dark: ['0 4px 3px rgba(70, 70, 70, 0.07)', '0 2px 2px rgba(70, 70, 70, 0.06)'],
+        boxes: ['1px 1px 3px rgba(255, 255, 255, 0.20)', '1px 1px 30px rgba(99, 117, 124, 0.2)'],
       },
       fontFamily: {
-        PlusJakartaSans: ['PlusJakartaSans-ExtraBold', 'sans-serif', 'Arial'],
+        PlusJakartaSansBold: ['PlusJakartaSans-Bold', 'sans-serif', 'Arial'],
+        PlusJakartaSansExtraBold: ['PlusJakartaSans-ExtraBold', 'sans-serif', 'Arial'],
         RobotoFlex: ['Roboto Flex', 'Arial'],
         Raleway: ['Raleway-SemiBold', 'Arial'],
+      },
+      fontSize: {
+        md: ['17px', '26px'],
       },
     },
   },
