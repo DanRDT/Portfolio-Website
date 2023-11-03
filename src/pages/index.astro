@@ -1,69 +1,62 @@
 ---
-import HR from "../components/HR.astro";
-import Project from "../components/Project.astro";
-import Body from "../layouts/Body.astro";
+import HR from '../components/HR.astro'
+import Project from '../components/Project.astro'
+import Body from '../layouts/Body.astro'
 ---
 
 <Body
-  title="Daniel Pulber • Software Engineer • Web Developer"
+  title='Daniel Pulber • Software Engineer • Web Developer'
   description="Demonstrating proficiency as a seasoned software engineer, Daniel Pulber excels in the dynamic realm of front-end web development. His expertise encompasses a wide spectrum, with a mastery of key technologies including JavaScript, ReactJs, and TypeScript. Daniel's skill set extends beyond conventional boundaries, enabling him to craft compelling user interfaces with a keen focus on interactivity. His capabilities shine in implementing sophisticated features, ranging from seamless data visualization to the seamless integration of real-time updates, showcasing a comprehensive command over cutting-edge web development."
-  keywords="Portfolio Website Daniel Pulber"
->
-  <header class="h-20 w-full flex items-center justify-end max-w-[90rem]">
-    <nav class="flex gap-10 text-md px-16 font-PlusJakartaSansBold">
-      <a href="/" class="hover:opacity-70 transition-opacity">Home</a>
-      <a href="#projects" class="hover:opacity-70 transition-opacity"
-        >Projects</a
-      >
-      <a href="/about" class="hover:opacity-70 transition-opacity">About</a>
+  keywords='Portfolio Website Daniel Pulber'>
+  <header class='group/nav h-20 w-full flex items-center justify-end max-w-[90rem]' data-nav-open='false'>
+    <nav
+      class='flex flex-col items-center justify-center bg-white h-screen w-screen fixed top-0 left-[100%] group-data-[nav-open=true]/nav:left-[0] z-50 gap-10 text-md px-16 font-PlusJakartaSansBold transition-all duration-300 md:z-auto md:relative md:w-auto md:h-auto md:bg-transparent md:flex-row'>
+      <a href='/' class='transition-opacity hover:opacity-70'>Home</a>
+      <a href='#projects' class='transition-opacity hover:opacity-70'> Projects</a>
+      <a href='/about' class='transition-opacity hover:opacity-70'>About</a>
     </nav>
-  </header>
-  <main class="w-screen max-w-[85rem]">
-    <section
-      class="flex flex-col gap-14 lg:gap-0 lg:flex-row w-full justify-between lg:h-screen lg:max-h-[35rem]"
-    >
+    <div
+      data-nav-button
+      class='flex flex-col absolute z-50 h-[1.5rem] right-8 top-8 justify-between cursor-pointer md:hidden'>
       <div
-        class="flex flex-col gap-7 pt-10 lg:justify-center lg:gap-16 lg:pl-16"
-      >
-        <h2
-          class="font-PlusJakartaSansExtraBold text-4xl sm:text-5xl lg:text-6xl text-center lg:text-left"
-        >
-          Hello!
-        </h2>
+        class='bg-black w-7 h-[2px] transition-all group-data-[nav-open=true]/nav:-rotate-45 group-data-[nav-open=true]/nav:translate-y-[0.685rem]'>
+      </div>
+      <div class='bg-black w-7 h-[2px] group-data-[nav-open=true]/nav:opacity-0'></div>
+      <div
+        class='bg-black w-7 h-[2px] transition-all group-data-[nav-open=true]/nav:rotate-45 group-data-[nav-open=true]/nav:-translate-y-[0.685rem]'>
+      </div>
+    </div>
+  </header>
+  <main class='w-screen max-w-[85rem]'>
+    <section class='flex flex-col gap-14 lg:gap-0 lg:flex-row w-full justify-between lg:h-screen lg:max-h-[35rem]'>
+      <div class='flex flex-col gap-7 pt-10 lg:justify-center lg:gap-16 lg:pl-16'>
+        <h2 class='text-4xl text-center font-PlusJakartaSansExtraBold sm:text-5xl lg:text-6xl lg:text-left'>Hello!</h2>
         <h3
-          class="font-Raleway text-center lg:text-left text-2xl sm:text-3xl lg:text-[2.4rem] lg:leading-[1.2] whitespace-nowrap"
-        >
+          class='font-Raleway text-center lg:text-left text-2xl sm:text-3xl lg:text-[2.4rem] lg:leading-[1.2] whitespace-nowrap'>
           I’m Daniel Pulber, <br />
            a software engineer <br />
            specializing in <br />
            Web & UI Development.
         </h3>
       </div>
-      <div class="flex self-center pb-16 lg:h-full lg:pr-4">
-        <div class="relative lg:h-full">
+      <div class='flex self-center pb-16 lg:h-full lg:pr-4'>
+        <div class='relative lg:h-full'>
           <div
-            class="drop-shadow-boxes relative rounded-3xl bg-blue-cornflower aspect-[35/23] w-[65vw] max-w-[250px] sm:max-w-[clamp(300px,40vw,330px)] lg:max-w-[350px] ml-[calc(25.1%/2)] lg:right-[clamp(12rem,20vw,16rem)] lg:top-[5.5rem] xl:right-[16rem]"
-          >
+            class='drop-shadow-boxes relative rounded-3xl bg-blue-cornflower aspect-[35/23] w-[65vw] max-w-[250px] sm:max-w-[clamp(300px,40vw,330px)] lg:max-w-[350px] ml-[calc(25.1%/2)] lg:right-[clamp(12rem,20vw,16rem)] lg:top-[5.5rem] xl:right-[16rem]'>
             <div
-              class="drop-shadow-boxes absolute rounded-3xl bg-pink-rubine aspect-[32/19] w-[45.7%] left-[-25%] top-[14%]"
-            >
+              class='drop-shadow-boxes absolute rounded-3xl bg-pink-rubine aspect-[32/19] w-[45.7%] left-[-25%] top-[14%]'>
             </div>
-            <div
-              class="drop-shadow-boxes absolute rounded-3xl bg-blue-slate aspect-[53/29] w-[75.7%] left-[-17%] top-[28%]"
-            >
+            <div class='drop-shadow-boxes absolute rounded-3xl bg-blue-slate aspect-[53/29] w-[75.7%] left-[-17%] top-[28%]'>
             </div>
           </div>
 
-          <div class="hidden lg:flex">
+          <div class='hidden lg:flex'>
             <div
-              class="drop-shadow-boxes absolute rounded-3xl right-[4rem] top-[25rem] bg-blue-cornflower w-[355px] h-[80px]"
-            >
+              class='drop-shadow-boxes absolute rounded-3xl right-[4rem] top-[25rem] bg-blue-cornflower w-[355px] h-[80px]'>
               <div
-                class="drop-shadow-boxes absolute rounded-3xl right-[-2.5rem] top-[-1.9rem] bg-pink-rubine w-[100px] h-[85px]"
-              >
+                class='drop-shadow-boxes absolute rounded-3xl right-[-2.5rem] top-[-1.9rem] bg-pink-rubine w-[100px] h-[85px]'>
                 <div
-                  class="drop-shadow-boxes absolute rounded-3xl right-[1.7rem] top-[-1.5rem] bg-blue-slate w-[130px] h-[70px]"
-                >
+                  class='drop-shadow-boxes absolute rounded-3xl right-[1.7rem] top-[-1.5rem] bg-blue-slate w-[130px] h-[70px]'>
                 </div>
               </div>
             </div>
@@ -73,6 +66,21 @@ import Body from "../layouts/Body.astro";
     </section>
     <HR />
   </main>
+  <script>
+    // Nav Sliding Menu For Mobile
+    const navButton = document.querySelector<HTMLElement>('[data-nav-button]')
+    const header = document.querySelector<HTMLElement>('header')
+    const nav = document.querySelector<HTMLElement>('header > nav')
+    // Nav Btn
+    navButton?.addEventListener('click', () => {
+      if (nav && header) {
+        const navOpen = header.getAttribute('data-nav-open')
+        if (navOpen === 'false') {
+          header.setAttribute('data-nav-open', 'true')
+        } else header.setAttribute('data-nav-open', 'false')
+      }
+    })
+  </script>
 </Body>
 
 <!-- <Project
