@@ -26,6 +26,21 @@ import Body from '../layouts/Body.astro'
         class='bg-black w-7 h-[2px] transition-all group-data-[nav-open=true]/nav:rotate-45 group-data-[nav-open=true]/nav:-translate-y-[0.685rem]'>
       </div>
     </div>
+    <script>
+      // Nav Sliding Menu For Mobile
+      const navButton = document.querySelector<HTMLElement>('[data-nav-button]')
+      const header = document.querySelector<HTMLElement>('header')
+      const nav = document.querySelector<HTMLElement>('header > nav')
+      // Nav Btn
+      navButton?.addEventListener('click', () => {
+        if (nav && header) {
+          const navOpen = header.getAttribute('data-nav-open')
+          if (navOpen === 'false') {
+            header.setAttribute('data-nav-open', 'true')
+          } else header.setAttribute('data-nav-open', 'false')
+        }
+      })
+    </script>
   </header>
   <main class='w-screen max-w-[85rem]'>
     <section class='flex flex-col gap-14 lg:gap-0 lg:flex-row w-full justify-between lg:h-screen lg:max-h-[35rem]'>
@@ -65,27 +80,21 @@ import Body from '../layouts/Body.astro'
       </div>
     </section>
     <HR />
+    <Project
+      heading='KB Solar'
+      subheading='Inventory Management System'
+      summary='Developed a sophisticated inventory management system tailored to enhance the user experience.'
+      color='#8FB3FF'
+      img='/imgs/projects/kb-solar-dashboard.png'
+    />
+    <HR />
+    <Project
+      heading='TOS Youth'
+      subheading='Website and Merch Store'
+      summary='Developed a sophisticated inventory management system tailored to enhance the user experience.'
+      color='#D41D6C'
+      img='/imgs/projects/tos-youth-home-page.png'
+      link='/'
+    />
   </main>
-  <script>
-    // Nav Sliding Menu For Mobile
-    const navButton = document.querySelector<HTMLElement>('[data-nav-button]')
-    const header = document.querySelector<HTMLElement>('header')
-    const nav = document.querySelector<HTMLElement>('header > nav')
-    // Nav Btn
-    navButton?.addEventListener('click', () => {
-      if (nav && header) {
-        const navOpen = header.getAttribute('data-nav-open')
-        if (navOpen === 'false') {
-          header.setAttribute('data-nav-open', 'true')
-        } else header.setAttribute('data-nav-open', 'false')
-      }
-    })
-  </script>
 </Body>
-
-<!-- <Project
-  heading='KB Solar'
-  subheading='Inventory Management System'
-  summary='Developed a sophisticated inventory management system tailored to enhance the customer experience.'
-  view={{ link: '', color: '#8FB3FF' }}
-/> -->
