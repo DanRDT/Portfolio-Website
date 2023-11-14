@@ -58,6 +58,8 @@ const ScrollDemo = () => {
   // change ScrollSVG to the active svg
   useEffect(() => {
     if (activeSvg) {
+      console.log('hi')
+
       setScrollSVG(scrollSvg(activeSvg))
       setPickableSvgs(prev => {
         return {
