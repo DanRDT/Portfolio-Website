@@ -11,9 +11,9 @@ import Body from '../layouts/Body.astro'
   <header class='group/nav h-20 w-full flex items-center justify-end max-w-[90rem]' data-nav-open='false'>
     <nav
       class='flex flex-col items-center justify-center bg-white h-screen w-screen fixed top-0 left-[100%] group-data-[nav-open=true]/nav:left-[0] z-50 gap-10 text-md px-16 font-PlusJakartaSansBold transition-all duration-300 md:z-auto md:relative md:w-auto md:h-auto md:top-auto md:left-auto md:bg-transparent md:flex-row'>
-      <a href='/' class='transition-opacity hover:opacity-70'>Home</a>
+      <a href='#home' class='transition-opacity hover:opacity-70'>Home</a>
       <a href='#projects' class='transition-opacity hover:opacity-70'> Projects</a>
-      <a href='/about' class='transition-opacity hover:opacity-70'>About</a>
+      <a href='#about' class='transition-opacity hover:opacity-70'>About</a>
     </nav>
     <div
       data-nav-button
@@ -42,7 +42,7 @@ import Body from '../layouts/Body.astro'
       })
     </script>
   </header>
-  <main class='w-screen max-w-[85rem] flex flex-col'>
+  <main id='home' class='w-screen max-w-[85rem] flex flex-col'>
     <section
       class='flex flex-col gap-14 lg:gap-0 lg:flex-row w-full max-w-7xl self-center justify-between lg:h-screen lg:max-h-[35rem]'>
       <div class='flex flex-col gap-7 pt-10 lg:justify-center lg:gap-16 lg:pl-16'>
@@ -84,7 +84,7 @@ import Body from '../layouts/Body.astro'
     <Project
       heading='KB Solar'
       subheading='Inventory Management System'
-      summary='Developed a sophisticated inventory management system tailored to enhance the user experience.'
+      summary='Designed and developed a resilient inventory management system and implemented an efficient, scalable database for optimal data management and application performance.'
       color='#8FB3FF'
       img='/imgs/projects/kb-solar-dashboard.png'
     />
@@ -92,10 +92,34 @@ import Body from '../layouts/Body.astro'
     <Project
       heading='TOS Youth'
       subheading='Website and Merch Store'
-      summary='Developed a sophisticated inventory management system tailored to enhance the user experience.'
+      summary='Developed a comprehensive full-stack website with interactive event and merchandise pages, along with a secure portal for managing merchandise, events, and orders.'
       color='#D41D6C'
       img='/imgs/projects/tos-youth-home-page.png'
-      link='/'
+      link='https://www.tos-youth.com'
     />
+    <HR />
+    <Project
+      heading='Scroll SVG'
+      subheading='NPM Package'
+      summary='Developed a JavaScript/Typescript NPM package for effortless SVG animation on scroll, enabling users to customize scroll animations with a single line of code.'
+      color='#8FB3FF'
+      img='/imgs/projects/tos-youth-home-page.png'
+      link='https://www.npmjs.com/package/scroll-svg'
+    />
+    <HR />
+    <footer id='about' class='flex py-9 pl-8 md:py-12 font-PlusJakartaSansExtraBold'>
+      <div class='mr-4 ml-3 mt-[8px] w-4 h-4 md:w-5 md:h-5 md:mt-[9px] md:mr-5 rounded shrink-0 bg-blue-cornflower'></div>
+      <div class='flex flex-col gap-4 md:gap-6'>
+        <h2 class='text-2xl md:text-3xl'>Contact</h2>
+        <div class='flex flex-wrap gap-4 pr-14 text-lg md:gap-8 md:text-xl font-PlusJakartaSansBold'>
+          <a href='mailto:pulberdan@gmail.com' class='transition-opacity hover:opacity-70'><h4>Email</h4></a>
+          <a href='https://github.com/DanRDT' class='transition-opacity hover:opacity-70'><h4>Github</h4></a>
+          <a href='https://www.linkedin.com/in/daniel-pulber' class='transition-opacity hover:opacity-70'
+            ><h4>LinkedIn</h4>
+          </a>
+          <a href='/files/resume.pdf' class='transition-opacity hover:opacity-70'><h4>Resume</h4></a>
+        </div>
+      </div>
+    </footer>
   </main>
 </Body>
