@@ -13,13 +13,16 @@ const { heading, subheading, summary, link, color, img } = Astro.props
 
 <section class='flex flex-col gap-6 self-center px-8 py-12 max-w-5xl'>
   <div class='flex'>
-    <div class='w-4 h-4 rounded-md mr-3 mt-[11px] shrink-0' style=`background-color: ${color};`></div>
+    <div
+      class='w-4 h-4 rounded-md mr-3 mt-[9px] md:mt-[11px] lg:mt-[12px] lg:w-5 lg:h-5 shrink-0'
+      style=`background-color: ${color};`>
+    </div>
     <div class='flex flex-col gap-2 grow sm:flex-row'>
-      <div class='flex flex-col gap-2 sm:w-[40%] lg:w-[50%]'>
+      <div class='flex flex-col gap-2 sm:w-[40%]'>
         <h3 class='text-2xl font-PlusJakartaSansExtraBold md:text-3xl lg:text-4xl'>{heading}</h3>
         <h4 class='font-RobotoFlex text-neutral-500 lg:text-lg'>{subheading}</h4>
       </div>
-      <div class='flex flex-col justify-center gap-4 sm:w-[60%] lg:w-[50%]'>
+      <div class='flex flex-col justify-center gap-4 sm:w-[60%]'>
         <h4 class='font-RobotoFlex md:text-lg lg:text-xl'>
           {summary}
         </h4>
@@ -39,7 +42,7 @@ const { heading, subheading, summary, link, color, img } = Astro.props
       </div>
     </div>
   </div>
-  <div class='flex self-center sm:mx-[5vw] sm:max-w-[50rem]'>
+  <div class='self-center sm:mx-[min(5vw,5rem)] flex sm:max-w-[50rem]'>
     <img src={img} class='w-full' alt='' />
   </div>
 </section>
