@@ -49,8 +49,6 @@ const ScrollDemo = () => {
     const svgPath = document.querySelector('#scroll-line-2') as SVGPathElement
     setActiveSvg(svgPath)
     return () => {
-      console.log('stopped')
-
       scrollSVG.stopAnimating()
     }
   }, [])
@@ -58,9 +56,9 @@ const ScrollDemo = () => {
   // change ScrollSVG to the active svg
   useEffect(() => {
     if (activeSvg) {
-      console.log('hi')
+      const createScrollSvg = scrollSvg(activeSvg)
+      setScrollSVG(createScrollSvg)
 
-      setScrollSVG(scrollSvg(activeSvg))
       setPickableSvgs(prev => {
         return {
           'scroll-line-1': '',
@@ -89,7 +87,6 @@ const ScrollDemo = () => {
     setOptionsCSS(defaultOptionsCSS)
     setActiveSvg(svgPath)
     setPickSvgDropdown('')
-    console.log('changed svg')
   }
 
   function changeOptions(key: string, inputValue: string): void {
@@ -170,7 +167,6 @@ const ScrollDemo = () => {
       }
       target.closest('[data-dropdown]')?.classList.add('active')
     }
-
     window.addEventListener('click', aside)
     return () => {
       window.removeEventListener('click', aside)
