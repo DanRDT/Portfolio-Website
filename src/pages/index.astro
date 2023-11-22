@@ -28,18 +28,33 @@ import Body from '../layouts/Body.astro'
     </div>
     <script>
       // Nav Sliding Menu For Mobile
-      const navButton = document.querySelector<HTMLElement>('[data-nav-button]')
-      const header = document.querySelector<HTMLElement>('header')
-      const nav = document.querySelector<HTMLElement>('header > nav')
+      const body = document.querySelector('body') as HTMLElement
+      const navButton = document.querySelector('[data-nav-button]') as HTMLElement
+      const header = document.querySelector('header') as HTMLElement
+      const hrefBtns = document.querySelectorAll('nav > a')
+
       // Nav Btn
-      navButton?.addEventListener('click', () => {
-        if (nav && header) {
-          const navOpen = header.getAttribute('data-nav-open')
-          if (navOpen === 'false') {
-            header.setAttribute('data-nav-open', 'true')
-          } else header.setAttribute('data-nav-open', 'false')
-        }
+      navButton.addEventListener('click', () => {
+        const navOpen = header.getAttribute('data-nav-open')
+        if (navOpen === 'false') setNavState('open')
+        else setNavState('closed')
       })
+      window.onresize = () => setNavState('closed')
+
+      // Link Buttons
+      hrefBtns.forEach(btn => {
+        btn.addEventListener('click', () => setNavState('closed'))
+      })
+
+      function setNavState(state: 'open' | 'closed') {
+        if (state === 'open') {
+          header.setAttribute('data-nav-open', 'true')
+          body.style.overflowY = 'hidden'
+        } else {
+          header.setAttribute('data-nav-open', 'false')
+          body.style.overflowY = 'visible'
+        }
+      }
     </script>
   </header>
   <main id='home' class='w-screen max-w-[85rem] flex flex-col'>
