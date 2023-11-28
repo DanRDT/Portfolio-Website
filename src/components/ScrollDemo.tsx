@@ -436,6 +436,20 @@ const ScrollDemo = () => {
             fill()
           </h3>
         </section>
+        <section className='animation-state-section'>
+          <h2 className='animation-state-heading'>Current State</h2>
+          <div className='animation-state-container'>
+            <h3 data-animation-state='paused' data-state-active='false'>
+              Paused
+            </h3>
+            <h3 data-animation-state='idle' data-state-active='true'>
+              Idle
+            </h3>
+            <h3 data-animation-state='active' data-state-active='false'>
+              Active
+            </h3>
+          </div>
+        </section>
       </aside>
     </>
   )

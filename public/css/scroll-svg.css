@@ -12,8 +12,8 @@
 
 /* Fonts */
 @font-face {
-  font-family: "raleway";
-  src: url("/fonts/Raleway-Medium.woff") format("woff");
+  font-family: 'raleway';
+  src: url('/fonts/Raleway-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +24,7 @@
 *::after {
   box-sizing: border-box;
   color: var(--secondary-color);
-  font-family: "raleway", Arial, sans-serif;
+  font-family: 'raleway', Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 100;
@@ -335,6 +335,54 @@ aside {
   }
   .aside-btn {
     display: flex;
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
   }
+}
+
+/* Animation State */
+
+.animation-state-section {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+}
+.animation-state-heading {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.animation-state-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+[data-animation-state] {
+  background-color: #414141;
+  border: 1px solid #9a9a9a;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+}
+
+[data-animation-state='idle'][data-state-active='true'] {
+  --animation-state-color: #fbbf24;
+  border: 1px solid var(--animation-state-color);
+  filter: drop-shadow(0 0 5px var(--animation-state-color));
+}
+
+[data-animation-state='paused'][data-state-active='true'] {
+  --animation-state-color: #b91c1c;
+  border: 1px solid var(--animation-state-color);
+  filter: drop-shadow(0 0 5px var(--animation-state-color));
+}
+
+[data-animation-state='active'][data-state-active='true'] {
+  --animation-state-color: green;
+  border: 1px solid var(--animation-state-color);
+  filter: drop-shadow(0 0 5px var(--animation-state-color));
 }
