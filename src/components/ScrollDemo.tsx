@@ -173,6 +173,10 @@ const ScrollDemo = () => {
     }
   }, [])
 
+  // useEffect(() => {
+  //   // Current State Section
+  // }, [scrollSVG])
+
   return (
     <>
       <main>
@@ -436,7 +440,7 @@ const ScrollDemo = () => {
             fill()
           </h3>
         </section>
-        <section className='animation-state-section'>
+        {/* <section className='animation-state-section'>
           <h2 className='animation-state-heading'>Current State</h2>
           <div className='animation-state-container'>
             <h3 data-animation-state='paused' data-state-active='false'>
@@ -449,7 +453,7 @@ const ScrollDemo = () => {
               Active
             </h3>
           </div>
-        </section>
+        </section> */}
       </aside>
     </>
   )
