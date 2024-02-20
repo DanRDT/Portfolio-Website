@@ -127,12 +127,29 @@ import Body from '../layouts/Body.astro'
       <div class='flex flex-col gap-4 md:gap-6'>
         <h2 class='text-2xl md:text-3xl'>Contact</h2>
         <div class='flex flex-wrap gap-4 pr-14 text-lg md:gap-8 md:text-xl font-PlusJakartaSansBold'>
-          <a href='mailto:pulberdan@gmail.com' class='transition-opacity hover:opacity-70'><h4>Email</h4></a>
-          <a href='https://github.com/DanRDT' class='transition-opacity hover:opacity-70'><h4>Github</h4></a>
-          <a href='https://www.linkedin.com/in/daniel-pulber' class='transition-opacity hover:opacity-70'
+          <a
+            href='mailto:pulberdan@gmail.com'
+            title='pulberdan@gmail.com'
+            class='transition-opacity hover:opacity-70'
+            target='_blank'
+            rel='noopener noreferrer'><h4>Email</h4></a
+          >
+          <a
+            href='https://github.com/DanRDT'
+            class='transition-opacity hover:opacity-70'
+            target='_blank'
+            rel='noopener noreferrer'><h4>Github</h4></a
+          >
+          <a
+            href='https://www.linkedin.com/in/daniel-pulber'
+            class='transition-opacity hover:opacity-70'
+            target='_blank'
+            rel='noopener noreferrer'
             ><h4>LinkedIn</h4>
           </a>
-          <a href='/files/resume.pdf' class='transition-opacity hover:opacity-70'><h4>Resume</h4></a>
+          <a href='/files/resume.pdf' class='transition-opacity hover:opacity-70' target='_blank' rel='noopener noreferrer'
+            ><h4>Resume</h4></a
+          >
         </div>
       </div>
     </footer>

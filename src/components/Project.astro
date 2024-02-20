@@ -28,7 +28,7 @@ const { heading, subheading, summary, link, color, img } = Astro.props
         </h4>
         {
           link && (
-            <a href={link} class='flex gap-4 items-center'>
+            <a href={link} class='flex gap-4 items-center' target='_blank' rel='noopener noreferrer'>
               <h4>View Project</h4>
               <svg width='33' height='17' viewBox='0 0 33 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path
