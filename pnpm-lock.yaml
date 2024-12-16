@@ -30,8 +30,8 @@ importers:
         specifier: ^18.0.0
         version: 18.2.0(react@18.2.0)
       scroll-svg:
-        specifier: ^1.4.0
-        version: 1.4.0
+        specifier: ^1.5.0
+        version: 1.5.0
       tailwindcss:
         specifier: ^3.0.24
         version: 3.3.3
@@ -1770,8 +1770,8 @@ packages:
   scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
 
-  scroll-svg@1.4.0:
-    resolution: {integrity: sha512-vNdC6ZMFnDDWTl0B00a+FlFPdKKfjRUUCxBagJSckA7M3QJEM0YPVQl+uo/9zlsr5lc1zFYm/0IwLEj9TFEwuA==}
+  scroll-svg@1.5.0:
+    resolution: {integrity: sha512-WyzLVWayY2lUfhR5KqiIzFVK3IIy8qrBQHBuOJ3psEUqBOnB1/CHUcKKG+3aID13RCdaCvQr/2LR/7nw8KyoEQ==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -4019,7 +4019,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  scroll-svg@1.4.0: {}
+  scroll-svg@1.5.0: {}
 
   semver@6.3.1: {}
 
