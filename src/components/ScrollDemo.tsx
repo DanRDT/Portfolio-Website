@@ -314,20 +314,20 @@ const ScrollDemo = () => {
             <span className='bracket'>{'{'}</span>
           </h3>
           <div className='options-container'>
-            <div className={`option ${optionsCSS.invert}`}>
+            <div className={`option ${optionsCSS.undraw}`}>
               <h3 className='options-text'>
-                <span className='option-name'>invert</span>:
+                <span className='option-name'>undraw</span>:
               </h3>
               <select
                 onChange={e => {
                   changeOptions(e.target.name, e.target.value)
                 }}
-                value={optionsInput.invert}
-                name='invert'>
+                value={optionsInput.undraw}
+                name='undraw'>
                 <option value='false'>false</option>
                 <option value='true'>true</option>
               </select>
-              <a href='https://github.com/DanRDT/scroll-svg#invert' target='_blank' rel='noopener noreferrer'>
+              <a href='https://github.com/DanRDT/scroll-svg#undraw' target='_blank' rel='noopener noreferrer'>
                 <img
                   className='more-info'
                   src='/imgs/scroll-svg/more-info.svg'
@@ -399,20 +399,20 @@ const ScrollDemo = () => {
                 />
               </a>
             </div>
-            <div className={`option ${optionsCSS.undraw}`}>
+            <div className={`option ${optionsCSS.invert}`}>
               <h3 className='options-text'>
-                <span className='option-name'>undraw</span>:
+                <span className='option-name'>invert</span>:
               </h3>
               <select
                 onChange={e => {
                   changeOptions(e.target.name, e.target.value)
                 }}
-                value={optionsInput.undraw}
-                name='undraw'>
+                value={optionsInput.invert}
+                name='invert'>
                 <option value='false'>false</option>
                 <option value='true'>true</option>
               </select>
-              <a href='https://github.com/DanRDT/scroll-svg#undraw' target='_blank' rel='noopener noreferrer'>
+              <a href='https://github.com/DanRDT/scroll-svg#invert' target='_blank' rel='noopener noreferrer'>
                 <img
                   className='more-info'
                   src='/imgs/scroll-svg/more-info.svg'
