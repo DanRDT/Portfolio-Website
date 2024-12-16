@@ -59,7 +59,7 @@ const ScrollDemo = () => {
       const createScrollSvg = scrollSvg(activeSvg)
       setScrollSVG(createScrollSvg)
 
-      setPickableSvgs(prev => {
+      setPickableSvgs(() => {
         return {
           'scroll-line-1': '',
           'scroll-line-2': '',
@@ -172,10 +172,6 @@ const ScrollDemo = () => {
       window.removeEventListener('click', aside)
     }
   }, [])
-
-  // useEffect(() => {
-  //   // Current State Section
-  // }, [scrollSVG])
 
   return (
     <>
