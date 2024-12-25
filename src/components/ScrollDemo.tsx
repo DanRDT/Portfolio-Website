@@ -75,6 +75,7 @@ const ScrollDemo = () => {
   useEffect(() => {
     if (scrollSVG) {
       scrollSVG.changeOptions(options)
+      scrollSVG.redraw()
     }
   }, [options])
 
