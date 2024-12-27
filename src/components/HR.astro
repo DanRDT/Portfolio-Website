@@ -1,9 +1,11 @@
 ---
-interface Props {}
+interface Props {
+  id?: string
+}
 
-const {} = Astro.props
+const { id } = Astro.props
 ---
 
-<div class='w-full flex justify-center'>
+<div id={id} class='flex justify-center w-full'>
   <div class='w-[calc(100%-4rem)] h-[1px] bg-neutral-400'></div>
 </div>
