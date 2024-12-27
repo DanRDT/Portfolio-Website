@@ -1,4 +1,6 @@
 ---
+import '../styles/base.css'
+
 export interface Props {
   title: string
   description?: string
@@ -19,7 +21,6 @@ const { title, description, keywords } = Astro.props
     <link rel='icon' media='(prefers-color-scheme: light)' href='/imgs/favicon-light.png' type='image/png' />
     <link rel='icon' media='(prefers-color-scheme: dark)' href='/imgs/favicon-dark.png' type='image/png' />
     <meta name='generator' content={Astro.generator} />
-    <link rel='stylesheet' type='text/css' href='/css/base.css' />
   </head>
 
   <body class='flex flex-col items-center'>
