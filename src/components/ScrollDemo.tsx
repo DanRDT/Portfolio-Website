@@ -436,6 +436,9 @@ const ScrollDemo = () => {
           <h3 className='svg-method' onClick={() => scrollSVG.fill()}>
             fill()
           </h3>
+          <h3 className='svg-method' onClick={() => scrollSVG.redraw()}>
+            redraw()
+          </h3>
         </section>
         {/* <section className='animation-state-section'>
           <h2 className='animation-state-heading'>Current State</h2>
