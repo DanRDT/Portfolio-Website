@@ -122,7 +122,7 @@ main {
 
 .svg-section {
   width: 100%;
-  min-height: 100%;
+  min-height: 180%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -175,7 +175,7 @@ aside {
 .pick-svg-lbl {
   position: relative;
   width: 100%;
-  border: 2px solid var(--background-color);
+  border: 2px solid grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,6 +206,10 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.dropdown figure:hover {
+  border: 2px solid #646464;
+  background-color: #1d1d1d;
 }
 
 .dropdown figure img {
@@ -247,6 +251,7 @@ aside {
 }
 .bracket {
   color: #e2cd11;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .option-name {
   color: #84d2ff;
@@ -268,7 +273,7 @@ aside {
 }
 .option input,
 .option select {
-  width: 3.5rem;
+  width: 4rem;
   height: 1.5rem;
   border: 1px solid var(--secondary-color);
   border-radius: 8px;
@@ -278,6 +283,7 @@ aside {
 }
 .option select {
   cursor: pointer;
+  padding: 0 0.1rem;
 }
 
 .option.false input,
