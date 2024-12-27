@@ -167,7 +167,7 @@ import Body from '../layouts/Body.astro'
 </Body>
 
 <script>
-  import { animate, stagger } from 'motion'
+  import { animate, stagger, inView } from 'motion'
 
   // Animate Boxes
   animate('.dark-blue-box', { y: [-100, 0], opacity: [0, 1] }, { duration: 0.7, delay: 0 })
@@ -181,4 +181,13 @@ import Body from '../layouts/Body.astro'
   // Heading Text
   animate('.heading-text', { scale: [0, 1] }, { duration: 0.5 })
   animate('.subheading-text span', { scale: [0, 1], x: [-200, 0] }, { duration: 0.5, delay: stagger(0.2) })
+
+  inView('.project', ({ target }) => {
+    animate(target, { opacity: [0, 1] }, { duration: 1, delay: 0.2 })
+    animate(target, { y: [25, 0] }, { duration: 0.5, delay: 0.2 })
+  })
+
+  inView('.color-block', ({ target }) => {
+    animate(target, { x: [-30, 0], opacity: [0, 1] }, { duration: 0.8, delay: 0.1 })
+  })
 </script>
