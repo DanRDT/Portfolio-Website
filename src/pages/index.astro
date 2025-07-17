@@ -15,16 +15,10 @@ import Body from '../layouts/Body.astro'
       <a href='#projects' class='transition-opacity hover:opacity-70'> Projects</a>
       <a href='#contact' class='transition-opacity hover:opacity-70'>Contact</a>
     </nav>
-    <div
-      data-nav-button
-      class='flex flex-col absolute z-50 h-[1.5rem] right-8 top-8 justify-between cursor-pointer md:hidden'>
-      <div
-        class='bg-black w-7 h-[2px] transition-all group-data-[nav-open=true]/nav:-rotate-45 group-data-[nav-open=true]/nav:translate-y-[0.685rem]'>
-      </div>
+    <div data-nav-button class='flex flex-col absolute z-50 h-[1.5rem] right-8 top-8 justify-between cursor-pointer md:hidden'>
+      <div class='bg-black w-7 h-[2px] transition-all group-data-[nav-open=true]/nav:-rotate-45 group-data-[nav-open=true]/nav:translate-y-[0.685rem]'></div>
       <div class='bg-black w-7 h-[2px] group-data-[nav-open=true]/nav:opacity-0'></div>
-      <div
-        class='bg-black w-7 h-[2px] transition-all group-data-[nav-open=true]/nav:rotate-45 group-data-[nav-open=true]/nav:-translate-y-[0.685rem]'>
-      </div>
+      <div class='bg-black w-7 h-[2px] transition-all group-data-[nav-open=true]/nav:rotate-45 group-data-[nav-open=true]/nav:-translate-y-[0.685rem]'></div>
     </div>
     <script>
       // Nav Sliding Menu For Mobile
@@ -58,15 +52,10 @@ import Body from '../layouts/Body.astro'
     </script>
   </header>
   <main id='home' class='w-screen max-w-[85rem] flex flex-col'>
-    <section
-      class='flex flex-col gap-14 lg:gap-0 lg:flex-row w-full max-w-7xl self-center justify-between lg:h-screen lg:max-h-[35rem]'>
+    <section class='flex flex-col gap-14 lg:gap-0 lg:flex-row w-full max-w-7xl self-center justify-between lg:h-screen lg:max-h-[35rem]'>
       <div class='flex flex-col gap-7 items-center pt-10 lg:items-start lg:justify-center lg:gap-16 lg:pl-16'>
-        <h2
-          class='text-4xl text-center w-fit heading-text font-PlusJakartaSansExtraBold sm:text-5xl lg:text-6xl lg:text-left'>
-          Hello!
-        </h2>
-        <h3
-          class='subheading-text font-Raleway flex flex-col items-center text-center lg:text-left lg:items-start text-2xl sm:text-3xl lg:text-[2.4rem] lg:leading-[1.2] whitespace-nowrap'>
+        <h2 class='text-4xl text-center w-fit heading-text font-PlusJakartaSansExtraBold sm:text-5xl lg:text-6xl lg:text-left'>Hello!</h2>
+        <h3 class='subheading-text font-Raleway flex flex-col items-center text-center lg:text-left lg:items-start text-2xl sm:text-3xl lg:text-[2.4rem] lg:leading-[1.2] whitespace-nowrap'>
           <span class='w-fit'> I’m Daniel Pulber,</span>
           <span class='w-fit'> a software engineer with</span>
           <span class='w-fit'> professional experience</span>
@@ -77,22 +66,14 @@ import Body from '../layouts/Body.astro'
         <div class='relative lg:h-full'>
           <div
             class='dark-blue-box drop-shadow-boxes relative rounded-3xl bg-blue-cornflower aspect-[35/23] w-[65vw] max-w-[250px] sm:max-w-[clamp(300px,40vw,330px)] lg:max-w-[350px] ml-[calc(25.1%/2)] lg:right-[clamp(12rem,20vw,16rem)] lg:top-[5.5rem] xl:right-[16rem]'>
-            <div
-              class='red-box drop-shadow-boxes absolute rounded-3xl bg-pink-rubine aspect-[32/19] w-[45.7%] left-[-25%] top-[14%]'>
-            </div>
-            <div
-              class='light-blue-box drop-shadow-boxes absolute rounded-3xl bg-blue-slate aspect-[53/29] w-[75.7%] left-[-17%] top-[28%]'>
-            </div>
+            <div class='red-box drop-shadow-boxes absolute rounded-3xl bg-pink-rubine aspect-[32/19] w-[45.7%] left-[-25%] top-[14%]'></div>
+            <div class='light-blue-box drop-shadow-boxes absolute rounded-3xl bg-blue-slate aspect-[53/29] w-[75.7%] left-[-17%] top-[28%]'></div>
           </div>
 
           <div class='hidden lg:flex'>
-            <div
-              class='small-dark-blue-box drop-shadow-boxes absolute rounded-3xl right-[4rem] top-[25rem] bg-blue-cornflower w-[355px] h-[80px]'>
-              <div
-                class='small-red-box drop-shadow-boxes absolute rounded-3xl right-[-2.5rem] top-[-1.9rem] bg-pink-rubine w-[100px] h-[85px]'>
-                <div
-                  class='small-light-blue-box drop-shadow-boxes absolute rounded-3xl right-[1.7rem] top-[-1.5rem] bg-blue-slate w-[130px] h-[70px]'>
-                </div>
+            <div class='small-dark-blue-box drop-shadow-boxes absolute rounded-3xl right-[4rem] top-[25rem] bg-blue-cornflower w-[355px] h-[80px]'>
+              <div class='small-red-box drop-shadow-boxes absolute rounded-3xl right-[-2.5rem] top-[-1.9rem] bg-pink-rubine w-[100px] h-[85px]'>
+                <div class='small-light-blue-box drop-shadow-boxes absolute rounded-3xl right-[1.7rem] top-[-1.5rem] bg-blue-slate w-[130px] h-[70px]'></div>
               </div>
             </div>
           </div>
@@ -140,26 +121,9 @@ import Body from '../layouts/Body.astro'
       <div class='flex flex-col gap-4 md:gap-6'>
         <h2 class='text-2xl md:text-3xl'>Contact</h2>
         <div class='flex flex-wrap gap-4 pr-14 text-lg md:gap-8 md:text-xl font-PlusJakartaSansBold'>
-          <a
-            href='mailto:pulberdan@gmail.com'
-            title='pulberdan@gmail.com'
-            class='transition-opacity hover:opacity-70'
-            target='_blank'
-            rel='noopener noreferrer'><h4>Email</h4></a
-          >
-          <a
-            href='https://github.com/DanRDT'
-            class='transition-opacity hover:opacity-70'
-            target='_blank'
-            rel='noopener noreferrer'><h4>Github</h4></a
-          >
-          <a
-            href='https://www.linkedin.com/in/daniel-pulber'
-            class='transition-opacity hover:opacity-70'
-            target='_blank'
-            rel='noopener noreferrer'
-            ><h4>LinkedIn</h4>
-          </a>
+          <a href='mailto:pulberdan@gmail.com' title='pulberdan@gmail.com' class='transition-opacity hover:opacity-70' target='_blank' rel='noopener noreferrer'><h4>Email</h4></a>
+          <a href='https://github.com/DanRDT' class='transition-opacity hover:opacity-70' target='_blank' rel='noopener noreferrer'><h4>Github</h4></a>
+          <a href='https://www.linkedin.com/in/daniel-pulber' class='transition-opacity hover:opacity-70' target='_blank' rel='noopener noreferrer'><h4>LinkedIn</h4> </a>
         </div>
       </div>
     </footer>
