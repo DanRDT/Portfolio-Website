@@ -3,7 +3,7 @@ interface Props {
   heading: string
   subheading: string
   summary: string
-  color: string
+  color?: string
   img: string
   link?: string
 }
@@ -13,7 +13,7 @@ const { heading, subheading, summary, link, color, img } = Astro.props
 
 <section class='flex flex-col gap-6 self-center px-8 py-12 max-w-5xl project'>
   <div class='flex'>
-    <div class='color-block w-4 h-4 rounded-md mr-3 mt-[9px] md:mt-[11px] lg:mt-[12px] lg:w-5 lg:h-5 shrink-0' style=`background-color: ${color};`></div>
+    <div class='color-block w-4 h-4 rounded-md mr-3 mt-[9px] md:mt-[11px] lg:mt-[12px] lg:w-5 lg:h-5 shrink-0' style=`background-color: ${color ? color : 'var(--color)'};`></div>
     <div class='flex flex-col gap-2 grow sm:flex-row'>
       <div class='flex flex-col gap-2 sm:w-[40%]'>
         <h3 class='text-2xl font-PlusJakartaSansExtraBold md:text-3xl lg:text-4xl'>{heading}</h3>
@@ -30,7 +30,7 @@ const { heading, subheading, summary, link, color, img } = Astro.props
               <svg class='transition-transform group-hover:translate-x-2' width='33' height='17' viewBox='0 0 33 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path
                   d='M23.2392 0.344739C23.1299 0.453083 23.0432 0.581984 22.984 0.724005C22.9249 0.866026 22.8944 1.01836 22.8944 1.17221C22.8944 1.32607 22.9249 1.4784 22.984 1.62042C23.0432 1.76244 23.1299 1.89134 23.2392 1.99968L28.6002 7.36077H1.16545C0.856356 7.36077 0.559919 7.48356 0.341354 7.70213C0.122789 7.92069 0 8.21713 0 8.52623C0 8.83532 0.122789 9.13176 0.341354 9.35033C0.559919 9.56889 0.856356 9.69168 1.16545 9.69168H28.5769L23.2392 15.0178C23.0221 15.2362 22.9002 15.5316 22.9002 15.8394C22.9002 16.1473 23.0221 16.4427 23.2392 16.6611C23.4575 16.8782 23.7529 17 24.0608 17C24.3687 17 24.6641 16.8782 24.8824 16.6611L32.2947 9.24881C32.3945 9.15309 32.4739 9.03819 32.5281 8.91101C32.5823 8.78383 32.6103 8.647 32.6103 8.50874C32.6103 8.37049 32.5823 8.23366 32.5281 8.10648C32.4739 7.9793 32.3945 7.8644 32.2947 7.76868L24.8941 0.344739C24.7858 0.235503 24.6569 0.1488 24.5148 0.0896318C24.3728 0.0304632 24.2205 0 24.0666 0C23.9128 0 23.7604 0.0304632 23.6184 0.0896318C23.4764 0.1488 23.3475 0.235503 23.2392 0.344739Z'
-                  fill={color}
+                  fill={color ? color : 'var(--color)'}
                 />
               </svg>
             </a>
@@ -43,3 +43,15 @@ const { heading, subheading, summary, link, color, img } = Astro.props
     <img src={img} class='object-cover w-full rounded-2xl border-4 border-black aspect-video' alt='' />
   </div>
 </section>
+
+<style>
+  .project:nth-of-type(3n + 1) {
+    --color: #527adf;
+  }
+  .project:nth-of-type(3n + 2) {
+    --color: #8fb3ff;
+  }
+  .project:nth-of-type(3n + 3) {
+    --color: #d41d6c;
+  }
+</style>
